@@ -36,11 +36,9 @@ module IOExercise
   end
 end
 
-integers_file_path =
-'/Users/memuna/Desktop/ruby_code_personal/io_exercise/lib/io_exercise/output/integers.csv'
-
-prime_file_path =
-'/Users/memuna/Desktop/ruby_code_personal/io_exercise/lib/io_exercise/output/prime.csv'
+integers_file_path = File.join(Dir.pwd,'lib/io_exercise/output','integers.csv')
+prime_file_path = File.join(Dir.pwd,'lib/io_exercise/output','prime.csv')
 
 IOExercise::WriteIntegersToFile.new(integers_file_path, (1..1000)).process
 IOExercise::WritePrimeNumbersToFile.new(integers_file_path, prime_file_path).process
+
