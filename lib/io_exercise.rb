@@ -5,6 +5,8 @@ require 'csv'
 
 module IOExercise
   class WriteIntegersToFile
+    # program that writes numbers 1 -1000 to a csv file in output/integers.csv
+
     def initialize(filename, range)
       @filename = filename
       @integers = WholeNumber::Integer.generate(range)
@@ -17,6 +19,9 @@ module IOExercise
 
 
   class WritePrimeNumbersToFile
+    # program that reads from output/integers.csv and writes prime numbers
+    # between 1 -1000 to output/prime.csv
+
     def initialize(input_file, target_file)
       @numbers = FileOperations::CSVFile.read_from(input_file)
       @target_file = target_file

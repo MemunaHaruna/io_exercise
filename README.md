@@ -1,6 +1,15 @@
 # io_exercise
 
-* integers.rb file holds a program that writes numbers 1 -1000 to a csv file in output/integers.csv
+#### Folder structure
 
-* prime.rb file holds a program that reads from integers.csv and writes prime numbers between 1 -1000
-to a csv file in output/prime.csv
+- lib/
+  - io_exercise/
+    - helpers/
+      - file_operations.rb (module for IO operations)
+      - whole_number.rb (module for Integer and Prime number operations)
+
+    - output/
+      - prime.csv (output file for prime numbers between a given range)
+      - integers.csv (ouput file for integers within a given range)
+
+  - io_exercise.rb (main program)
